@@ -2442,6 +2442,7 @@ def embedding(
         elif custom_llm_provider == "ollama":
             if aembedding == True:
                 response = ollama.ollama_aembeddings(
+                    api_base=api_base,
                     model=model,
                     prompt=input,
                     encoding=encoding,
